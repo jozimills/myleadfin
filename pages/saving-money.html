@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saving Money - FinanceWise</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <i class="fas fa-chart-line"></i>
+            <span>FinanceWise</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="investing.html" class="nav-link">Investing</a></li>
+            <li>
+              <a href="passive-income.html" class="nav-link">Passive Income</a>
+            </li>
+            <li>
+              <a href="making-money.html" class="nav-link">Making Money</a>
+            </li>
+            <li>
+              <a href="saving-money.html" class="nav-link active"
+                >Saving Money</a
+              >
+            </li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+          </ul>
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">
+          <i class="fas fa-piggy-bank"></i> Saving Money
+        </h1>
+        <p class="page-subtitle">
+          Master the art of saving with proven strategies to build your wealth
+          and secure your financial future
+        </p>
+      </div>
+    </section>
+
+    <main class="page-content">
+      <div class="container">
+        <!-- Articles Section -->
+        <div class="content-section">
+          <h2>Latest Saving Money Articles</h2>
+          <div class="articles-grid">
+            <article
+              class="article-card"
+              onclick="openArticle('emergency-fund')"
+            >
+              <div class="article-image">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Emergency Fund</div>
+                <h3 class="article-title">
+                  How to Build a $10,000 Emergency Fund in 12 Months
+                </h3>
+                <p class="article-excerpt">
+                  Step-by-step guide to building a substantial emergency fund
+                  even on a tight budget...
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 5 min read</span
+                  >
+                  <span class="article-date">Dec 15, 2024</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article-card"
+              onclick="openArticle('grocery-savings')"
+            >
+              <div class="article-image">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Grocery Savings</div>
+                <h3 class="article-title">
+                  Cut Your Grocery Bill by 50% Without Couponing
+                </h3>
+                <p class="article-excerpt">
+                  Smart shopping strategies that can dramatically reduce your
+                  food expenses...
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 7 min read</span
+                  >
+                  <span class="article-date">Dec 10, 2024</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article-card"
+              onclick="openArticle('budget-automation')"
+            >
+              <div class="article-image">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Automation</div>
+                <h3 class="article-title">
+                  Set Up Your Budget on Autopilot in 30 Minutes
+                </h3>
+                <p class="article-excerpt">
+                  Automate your entire budgeting system so you never have to
+                  think about money again...
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 4 min read</span
+                  >
+                  <span class="article-date">Dec 8, 2024</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article-card"
+              onclick="openArticle('subscription-audit')"
+            >
+              <div class="article-image">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Subscription Management</div>
+                <h3 class="article-title">
+                  The Great Subscription Audit: Find Hidden Money Drains
+                </h3>
+                <p class="article-excerpt">
+                  Discover and cancel subscriptions you forgot about to save
+                  hundreds per year...
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 6 min read</span
+                  >
+                  <span class="article-date">Dec 5, 2024</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article-card"
+              onclick="openArticle('cash-challenges')"
+            >
+              <div class="article-image">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Savings Challenges</div>
+                <h3 class="article-title">
+                  5 Fun Money-Saving Challenges That Actually Work
+                </h3>
+                <p class="article-excerpt">
+                  Turn saving money into a game with these proven challenges
+                  that make it enjoyable...
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 8 min read</span
+                  >
+                  <span class="article-date">Dec 1, 2024</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article-card"
+              onclick="openArticle('energy-savings')"
+            >
+              <div class="article-image">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Utilities</div>
+                <h3 class="article-title">
+                  Slash Your Energy Bills: 15 Proven Tactics
+                </h3>
+                <p class="article-excerpt">
+                  Simple changes that can cut your electricity and heating costs
+                  by 30% or more...
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 10 min read</span
+                  >
+                  <span class="article-date">Nov 28, 2024</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Article Modal -->
+        <div id="article-modal" class="article-modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 id="modal-title"></h2>
+              <span class="close-btn" onclick="closeArticle()">&times;</span>
+            </div>
+            <div class="modal-body">
+              <div id="modal-article-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Why Saving Money Matters</h2>
+          <p>
+            Saving money is the cornerstone of financial stability and wealth
+            building. It provides you with an emergency cushion, enables you to
+            take advantage of investment opportunities, and gives you the
+            freedom to make choices without being constrained by financial
+            limitations.
+          </p>
+
+          <div class="tip-box">
+            <h4><i class="fas fa-lightbulb"></i> Pro Tip</h4>
+            <p>
+              The best time to start saving was yesterday. The second-best time
+              is today. Even small amounts saved consistently can grow into
+              substantial wealth over time through the power of compound
+              interest.
+            </p>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>The 50/30/20 Budget Rule</h2>
+          <p>
+            One of the most effective budgeting strategies is the 50/30/20 rule:
+          </p>
+          <ul>
+            <li>
+              <strong>50% for Needs:</strong> Housing, utilities, groceries,
+              transportation, minimum debt payments
+            </li>
+            <li>
+              <strong>30% for Wants:</strong> Entertainment, dining out,
+              hobbies, non-essential shopping
+            </li>
+            <li>
+              <strong>20% for Savings & Debt:</strong> Emergency fund,
+              retirement, investments, extra debt payments
+            </li>
+          </ul>
+          <p>
+            This framework provides structure while maintaining flexibility for
+            your lifestyle preferences.
+          </p>
+        </div>
+
+        <div class="content-section">
+          <h2>10 Proven Money-Saving Strategies</h2>
+
+          <h3>1. Automate Your Savings</h3>
+          <p>
+            Set up automatic transfers from your checking to savings account.
+            Treat savings like a non-negotiable bill that must be paid first.
+          </p>
+
+          <h3>2. Use the Envelope Method</h3>
+          <p>
+            Allocate cash for different spending categories in separate
+            envelopes. When the envelope is empty, you're done spending in that
+            category for the month.
+          </p>
+
+          <h3>3. Cut Subscription Services</h3>
+          <p>
+            Review all your monthly subscriptions. Cancel services you don't
+            actively use. Consider sharing family plans with relatives or
+            friends.
+          </p>
+
+          <h3>4. Shop with a List</h3>
+          <p>
+            Always shop with a prepared list and stick to it. This prevents
+            impulse purchases that can quickly add up to significant expenses.
+          </p>
+
+          <h3>5. Use the 24-Hour Rule</h3>
+          <p>
+            For non-essential purchases over $50, wait 24 hours before buying.
+            This cooling-off period often reveals that you don't really need the
+            item.
+          </p>
+
+          <h3>6. Cook at Home More</h3>
+          <p>
+            Meal planning and cooking at home can save hundreds of dollars
+            monthly compared to dining out or ordering takeout regularly.
+          </p>
+
+          <h3>7. Negotiate Bills</h3>
+          <p>
+            Call your service providers (internet, phone, insurance) annually to
+            negotiate better rates. Loyalty often isn't rewarded unless you ask.
+          </p>
+
+          <h3>8. Buy Generic Brands</h3>
+          <p>
+            Generic or store-brand products often offer the same quality as name
+            brands at 20-40% lower prices.
+          </p>
+
+          <h3>9. Use Cashback Apps</h3>
+          <p>
+            Utilize apps like Rakuten, Honey, or cashback credit cards for
+            purchases you're already making.
+          </p>
+
+          <h3>10. Implement a Waiting Period</h3>
+          <p>
+            For larger purchases, implement a waiting period: 1 week for $100, 1
+            month for $500, 3 months for $1000+.
+          </p>
+        </div>
+
+        <div class="content-section">
+          <h2>Building Your Emergency Fund</h2>
+          <p>
+            An emergency fund is your financial safety net. Here's how to build
+            one:
+          </p>
+
+          <h3>Start Small</h3>
+          <p>
+            Begin with a goal of $500-$1000. This covers most minor emergencies
+            without going into debt.
+          </p>
+
+          <h3>Aim for 3-6 Months of Expenses</h3>
+          <p>
+            Your ultimate goal should be 3-6 months of living expenses saved in
+            a easily accessible account.
+          </p>
+
+          <h3>Keep It Separate</h3>
+          <p>
+            Store your emergency fund in a separate high-yield savings account
+            to avoid temptation to spend it.
+          </p>
+
+          <div class="warning-box">
+            <h4><i class="fas fa-exclamation-triangle"></i> Important</h4>
+            <p>
+              Only use your emergency fund for true emergencies: job loss,
+              medical bills, major home repairs, or car breakdowns. A vacation
+              or sale at your favorite store doesn't qualify!
+            </p>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Saving Money on Major Expenses</h2>
+
+          <h3>Transportation</h3>
+          <ul>
+            <li>Buy used cars instead of new ones</li>
+            <li>Maintain your vehicle regularly to avoid costly repairs</li>
+            <li>Consider public transportation or carpooling</li>
+            <li>Shop around for car insurance annually</li>
+          </ul>
+
+          <h3>Housing</h3>
+          <ul>
+            <li>Consider downsizing if your current home is too expensive</li>
+            <li>Refinance your mortgage when rates drop</li>
+            <li>Make extra principal payments to save on interest</li>
+            <li>Get multiple quotes for home insurance</li>
+          </ul>
+
+          <h3>Utilities</h3>
+          <ul>
+            <li>Improve home insulation to reduce heating/cooling costs</li>
+            <li>Use programmable thermostats</li>
+            <li>Switch to LED light bulbs</li>
+            <li>Unplug electronics when not in use</li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2>Advanced Saving Techniques</h2>
+
+          <h3>Pay Yourself First</h3>
+          <p>
+            Before paying any bills or expenses, transfer money to savings. This
+            ensures saving becomes a priority, not an afterthought.
+          </p>
+
+          <h3>Round-Up Savings</h3>
+          <p>
+            Many banks offer round-up programs that automatically save your
+            spare change from purchases.
+          </p>
+
+          <h3>Seasonal Savings Challenges</h3>
+          <p>
+            Try challenges like the 52-Week Challenge: save $1 the first week,
+            $2 the second week, and so on. You'll save $1,378 by year-end!
+          </p>
+
+          <h3>High-Yield Savings Accounts</h3>
+          <p>
+            Move your savings to high-yield accounts that offer better interest
+            rates than traditional banks.
+          </p>
+        </div>
+
+        <div class="content-section">
+          <h2>Common Saving Mistakes to Avoid</h2>
+          <ul>
+            <li>
+              <strong>Saving too little:</strong> Aim for at least 20% of your
+              income
+            </li>
+            <li>
+              <strong>Not having clear goals:</strong> Specific goals motivate
+              better than vague intentions
+            </li>
+            <li>
+              <strong>Lifestyle inflation:</strong> Avoid increasing spending as
+              income grows
+            </li>
+            <li>
+              <strong>Ignoring small expenses:</strong> Daily coffee or snacks
+              add up to significant amounts
+            </li>
+            <li>
+              <strong>Not tracking spending:</strong> You can't manage what you
+              don't measure
+            </li>
+          </ul>
+        </div>
+
+        <div class="tip-box">
+          <h4><i class="fas fa-rocket"></i> Take Action Today</h4>
+          <p>
+            Start with one saving strategy from this guide. Set up an automatic
+            transfer of $25 to savings this week. Small steps lead to big
+            results!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-chart-line"></i>
+              <span>FinanceWise</span>
+            </div>
+            <p>
+              Empowering your journey to financial freedom through education and
+              practical strategies.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="saving-money.html">Saving Money</a></li>
+              <li><a href="making-money.html">Making Money</a></li>
+              <li><a href="passive-income.html">Passive Income</a></li>
+              <li><a href="investing.html">Investing</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 FinanceWise. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

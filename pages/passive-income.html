@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passive Income - FinanceWise</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <i class="fas fa-chart-line"></i>
+            <span>FinanceWise</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="../index.html" class="nav-link">Home</a></li>
+            <li><a href="investing.html" class="nav-link">Investing</a></li>
+            <li>
+              <a href="passive-income.html" class="nav-link active"
+                >Passive Income</a
+              >
+            </li>
+            <li>
+              <a href="making-money.html" class="nav-link">Making Money</a>
+            </li>
+            <li>
+              <a href="saving-money.html" class="nav-link">Saving Money</a>
+            </li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+          </ul>
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title"><i class="fas fa-coins"></i> Passive Income</h1>
+        <p class="page-subtitle">
+          Build wealth while you sleep with proven passive income strategies
+          that generate money 24/7
+        </p>
+      </div>
+    </section>
+
+    <main class="page-content">
+      <div class="container">
+        <!-- Articles Section -->
+        <div class="content-section">
+          <h2>Featured Passive Income Articles</h2>
+          <div class="articles-grid">
+            <article
+              class="article-card"
+              onclick="openArticle('dividend-investing-guide')"
+            >
+              <div class="article-image">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Investment Strategy</div>
+                <h3 class="article-title">
+                  Dividend Investing: Building Wealth Through Passive Income
+                </h3>
+                <p class="article-excerpt">
+                  Learn how to build a steady income stream through
+                  dividend-paying stocks, REITs, and ETFs. Discover the best
+                  dividend strategies for long-term wealth building.
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 11 min read</span
+                  >
+                  <span class="article-date">July 2025</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article-card"
+              onclick="openArticle('rental-property-investing')"
+            >
+              <div class="article-image">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Real Estate</div>
+                <h3 class="article-title">
+                  Real Estate Investing: Your Complete Rental Property Guide
+                </h3>
+                <p class="article-excerpt">
+                  Master rental property investing from finding deals to
+                  managing tenants. Learn cash flow analysis, financing
+                  strategies, and scaling your portfolio.
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 13 min read</span
+                  >
+                  <span class="article-date">July 2025</span>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="article-card"
+              onclick="openArticle('online-business-passive-income')"
+            >
+              <div class="article-image">
+                <i class="fas fa-laptop"></i>
+              </div>
+              <div class="article-content">
+                <div class="article-category">Online Business</div>
+                <h3 class="article-title">
+                  Building Passive Income Through Online Businesses
+                </h3>
+                <p class="article-excerpt">
+                  Create scalable digital income streams through online courses,
+                  affiliate marketing, and automated systems that generate
+                  revenue 24/7.
+                </p>
+                <div class="article-meta">
+                  <span class="read-time"
+                    ><i class="fas fa-clock"></i> 12 min read</span
+                  >
+                  <span class="article-date">July 2025</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Article Modal -->
+        <div id="article-modal" class="article-modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 id="modal-title"></h2>
+              <span class="close-btn" onclick="closeArticle()">&times;</span>
+            </div>
+            <div class="modal-body">
+              <div id="modal-article-content"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>What is Passive Income?</h2>
+          <p>
+            Passive income is money earned with minimal ongoing effort after an
+            initial investment of time, money, or both. Unlike active income
+            from a job, passive income continues flowing even when you're not
+            actively working.
+          </p>
+
+          <p>The key benefits of passive income include:</p>
+          <ul>
+            <li>Financial freedom and independence</li>
+            <li>Time freedom to pursue other interests</li>
+            <li>Wealth building through compound growth</li>
+            <li>Reduced reliance on traditional employment</li>
+            <li>Protection against job loss or economic downturns</li>
+          </ul>
+
+          <div class="tip-box">
+            <h4><i class="fas fa-lightbulb"></i> Reality Check</h4>
+            <p>
+              True passive income requires significant upfront work or
+              investment. Be wary of "get rich quick" schemes. Legitimate
+              passive income streams take time to build but can provide
+              long-term financial security.
+            </p>
+          </div>
+        </div>
+
+        <div class="content-section">
+          <h2>Types of Passive Income</h2>
+
+          <h3>Investment-Based Passive Income</h3>
+          <p>These require initial capital but generate ongoing returns:</p>
+          <ul>
+            <li>Dividend-paying stocks and ETFs</li>
+            <li>Real estate investment trusts (REITs)</li>
+            <li>Peer-to-peer lending</li>
+            <li>High-yield savings accounts and CDs</li>
+            <li>Bond investments</li>
+          </ul>
+
+          <h3>Business-Based Passive Income</h3>
+          <p>These require upfront work but minimal ongoing maintenance:</p>
+          <ul>
+            <li>Online courses and digital products</li>
+            <li>Rental properties</li>
+            <li>Royalties from creative work</li>
+            <li>Affiliate marketing</li>
+            <li>Drop-shipping businesses</li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2>Top Passive Income Strategies</h2>
+
+          <h3>1. Dividend Investing</h3>
+          <p><strong>Initial Investment:</strong> $1,000+</p>
+          <p><strong>Potential Return:</strong> 2-6% annually</p>
+          <p>
+            Invest in dividend-paying stocks or dividend-focused ETFs that
+            distribute quarterly payments to shareholders.
+          </p>
+
+          <h4>Best Dividend Stocks for Beginners:</h4>
+          <ul>
+            <li>Dividend ETFs (VTI, SCHD, DVY)</li>
+            <li>Utilities and consumer staples</li>
+            <li>REITs for real estate exposure</li>
+            <li>
+              Dividend aristocrats (companies with 25+ years of increases)
+            </li>
+          </ul>
+
+          <div class="tip-box">
+            <h4><i class="fas fa-chart-line"></i> Pro Tip</h4>
+            <p>
+              Reinvest dividends automatically through DRIP (Dividend
+              Reinvestment Plans) to compound your returns over time.
+            </p>
+          </div>
+
+          <h3>2. Real Estate Investment Trusts (REITs)</h3>
+          <p><strong>Initial Investment:</strong> $500+</p>
+          <p><strong>Potential Return:</strong> 4-8% annually</p>
+          <p>
+            REITs allow you to invest in real estate without buying property
+            directly. They're required to distribute 90% of income to
+            shareholders.
+          </p>
+
+          <h4>Types of REITs:</h4>
+          <ul>
+            <li>Residential REITs (apartments, homes)</li>
+            <li>Commercial REITs (offices, retail)</li>
+            <li>Industrial REITs (warehouses, data centers)</li>
+            <li>Healthcare REITs (hospitals, senior housing)</li>
+          </ul>
+
+          <h3>3. Rental Properties</h3>
+          <p><strong>Initial Investment:</strong> $20,000-$50,000+</p>
+          <p><strong>Potential Return:</strong> 6-12% annually</p>
+          <p>
+            Buy rental properties that generate monthly income after expenses.
+            Consider single-family homes, duplexes, or small apartment
+            buildings.
+          </p>
+
+          <h4>Key Considerations:</h4>
+          <ul>
+            <li>Location and rental demand</li>
+            <li>Property management costs</li>
+            <li>Maintenance and vacancy expenses</li>
+            <li>Local rental laws and regulations</li>
+          </ul>
+
+          <h3>4. Online Courses and Digital Products</h3>
+          <p><strong>Initial Investment:</strong> Time + $0-$500</p>
+          <p><strong>Potential Return:</strong> $500-$10,000+ monthly</p>
+          <p>
+            Create educational content once and sell it repeatedly. Popular
+            platforms include Teachable, Udemy, and Gumroad.
+          </p>
+
+          <h4>Digital Product Ideas:</h4>
+          <ul>
+            <li>Online courses in your expertise area</li>
+            <li>E-books and guides</li>
+            <li>Stock photography or design templates</li>
+            <li>Software tools or mobile apps</li>
+            <li>Membership sites with exclusive content</li>
+          </ul>
+
+          <h3>5. Peer-to-Peer Lending</h3>
+          <p><strong>Initial Investment:</strong> $25+</p>
+          <p><strong>Potential Return:</strong> 3-7% annually</p>
+          <p>
+            Lend money to individuals or small businesses through platforms like
+            LendingClub or Prosper.
+          </p>
+
+          <div class="warning-box">
+            <h4><i class="fas fa-exclamation-triangle"></i> Risk Warning</h4>
+            <p>
+              P2P lending carries default risk. Diversify across many loans and
+              only invest money you can afford to lose.
+            </p>
+          </div>
+
+          <h3>6. High-Yield Savings and CDs</h3>
+          <p><strong>Initial Investment:</strong> $1+</p>
+          <p><strong>Potential Return:</strong> 4-5% annually</p>
+          <p>
+            The safest passive income option. Online banks often offer higher
+            rates than traditional banks.
+          </p>
+
+          <h4>Best High-Yield Options:</h4>
+          <ul>
+            <li>Marcus by Goldman Sachs</li>
+            <li>Ally Bank</li>
+            <li>Capital One 360</li>
+            <li>CIT Bank</li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2>Building Your Passive Income Portfolio</h2>
+
+          <h3>Start with Your Risk Tolerance</h3>
+          <p>Assess how much risk you're comfortable with:</p>
+          <ul>
+            <li>
+              <strong>Conservative:</strong> High-yield savings, CDs, government
+              bonds
+            </li>
+            <li>
+              <strong>Moderate:</strong> Dividend stocks, REITs, corporate bonds
+            </li>
+            <li>
+              <strong>Aggressive:</strong> Growth stocks, real estate, business
+              investments
+            </li>
+          </ul>
+
+          <h3>Diversification Strategy</h3>
+          <p>Don't put all your money in one passive income stream:</p>
+          <ul>
+            <li>Mix different asset classes</li>
+            <li>Combine investment and business-based income</li>
+            <li>Consider geographic diversification</li>
+            <li>Balance risk and return across investments</li>
+          </ul>
+
+          <h3>The 4% Rule</h3>
+          <p>
+            A common guideline suggests you can safely withdraw 4% of your
+            investment portfolio annually without depleting the principal. This
+            means:
+          </p>
+          <ul>
+            <li>$25,000 invested = $1,000 annual passive income</li>
+            <li>$250,000 invested = $10,000 annual passive income</li>
+            <li>$1,000,000 invested = $40,000 annual passive income</li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2>Advanced Passive Income Strategies</h2>
+
+          <h3>Create a YouTube Channel</h3>
+          <p>
+            Build an audience and monetize through ads, sponsorships, and
+            affiliate marketing.
+          </p>
+
+          <h3>License Your Photography</h3>
+          <p>
+            Upload photos to stock photography sites like Shutterstock, Adobe
+            Stock, or Getty Images.
+          </p>
+
+          <h3>Affiliate Marketing</h3>
+          <p>
+            Promote products you believe in and earn commissions on sales
+            through your unique links.
+          </p>
+
+          <h3>Create a Mobile App</h3>
+          <p>
+            Develop apps that generate revenue through ads, in-app purchases, or
+            subscriptions.
+          </p>
+
+          <h3>Invest in Businesses</h3>
+          <p>
+            Become a silent partner in existing businesses or invest in startups
+            through platforms like AngelList.
+          </p>
+        </div>
+
+        <div class="content-section">
+          <h2>Tax Considerations</h2>
+          <p>
+            Different passive income sources have different tax implications:
+          </p>
+          <ul>
+            <li>
+              <strong>Dividends:</strong> May qualify for lower capital gains
+              tax rates
+            </li>
+            <li>
+              <strong>Rental Income:</strong> Taxed as ordinary income but
+              allows depreciation deductions
+            </li>
+            <li><strong>Interest:</strong> Usually taxed as ordinary income</li>
+            <li><strong>Royalties:</strong> Taxed as ordinary income</li>
+            <li>
+              <strong>Business Income:</strong> May qualify for 20% deduction
+              under Section 199A
+            </li>
+          </ul>
+
+          <p>
+            Consider tax-advantaged accounts like IRAs and 401(k)s for
+            investment-based passive income.
+          </p>
+        </div>
+
+        <div class="content-section">
+          <h2>Common Passive Income Mistakes</h2>
+          <ul>
+            <li>
+              <strong>Expecting immediate results:</strong> Passive income takes
+              time to build
+            </li>
+            <li>
+              <strong>Not diversifying:</strong> Putting all money in one
+              investment
+            </li>
+            <li>
+              <strong>Ignoring fees:</strong> High fees can erode returns
+              significantly
+            </li>
+            <li>
+              <strong>Chasing high yields:</strong> Higher returns usually mean
+              higher risk
+            </li>
+            <li>
+              <strong>Not reinvesting:</strong> Compound growth requires
+              reinvestment
+            </li>
+            <li>
+              <strong>Lack of patience:</strong> Switching strategies too
+              frequently
+            </li>
+          </ul>
+        </div>
+
+        <div class="content-section">
+          <h2>Getting Started Action Plan</h2>
+
+          <h3>Month 1: Foundation</h3>
+          <ul>
+            <li>Open a high-yield savings account</li>
+            <li>Start investing in broad market index funds</li>
+            <li>Research your first passive income strategy</li>
+          </ul>
+
+          <h3>Month 2-3: First Stream</h3>
+          <ul>
+            <li>Implement your chosen passive income strategy</li>
+            <li>Set up automatic investments</li>
+            <li>Track your progress</li>
+          </ul>
+
+          <h3>Month 4-6: Expansion</h3>
+          <ul>
+            <li>Add a second passive income stream</li>
+            <li>Reinvest your first earnings</li>
+            <li>Optimize and scale successful strategies</li>
+          </ul>
+        </div>
+
+        <div class="tip-box">
+          <h4><i class="fas fa-rocket"></i> Take Action Today</h4>
+          <p>
+            Start building passive income this week by opening a high-yield
+            savings account and investing $100 in a dividend ETF. Small steps
+            lead to big results over time!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-chart-line"></i>
+              <span>FinanceWise</span>
+            </div>
+            <p>
+              Empowering your journey to financial freedom through education and
+              practical strategies.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="saving-money.html">Saving Money</a></li>
+              <li><a href="making-money.html">Making Money</a></li>
+              <li><a href="passive-income.html">Passive Income</a></li>
+              <li><a href="investing.html">Investing</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 FinanceWise. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

@@ -629,6 +629,12 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+.article-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .article-image {
   height: 160px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -822,5 +828,249 @@ body {
 
   .modal-body {
     padding: 20px;
+  }
+}
+
+/* Article Page Styles */
+.article-page {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.breadcrumb {
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  margin: 0 10px;
+  color: #999;
+}
+
+.article-header {
+  margin-bottom: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.article-category {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.article-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.article-meta span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.article-meta i {
+  margin-right: 5px;
+  color: #2563eb;
+}
+
+.share-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.share-buttons span {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.share-btn.twitter {
+  background: #1da1f2;
+}
+
+.share-btn.facebook {
+  background: #4267b2;
+}
+
+.share-btn.linkedin {
+  background: #0077b5;
+}
+
+.share-btn.copy {
+  background: #666;
+}
+
+.article-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.article-intro {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  border-radius: 0 8px 8px 0;
+}
+
+.article-content h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 40px 0 20px 0;
+  color: #1a1a1a;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.article-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 30px 0 15px 0;
+  color: #2563eb;
+}
+
+.article-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 25px 0 10px 0;
+  color: #374151;
+}
+
+.article-content p {
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.article-content ul {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+.article-content li {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.article-content strong {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.article-navigation {
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 2px solid #f3f4f6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-section h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+.nav-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-section li {
+  margin-bottom: 10px;
+}
+
+.nav-section a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-section a:hover {
+  color: #2563eb;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .article-title {
+    font-size: 2rem;
+  }
+
+  .article-meta {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .share-buttons {
+    justify-content: center;
+  }
+
+  .article-content {
+    font-size: 1rem;
+  }
+
+  .article-navigation {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .breadcrumb {
+    font-size: 0.8rem;
   }
 }

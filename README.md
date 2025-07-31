@@ -1,4 +1,4 @@
-#\FinanceWise - Personal Finance Blog
+# MYLEADfin - Personal Finance Blog
 
 A comprehensive static website covering personal finance topics including saving money, side hustles, passive income, stock investing, and cryptocurrency.
 
@@ -33,7 +33,7 @@ A comprehensive static website covering personal finance topics including saving
 1. **Create a GitHub Repository**
 
    - Go to GitHub.com and create a new repository
-   - Name it something like `personal-finance-blog` or `financewise-blog`
+   - Name it something like `personal-finance-blog` or `myleadfin-blog`
    - Make sure it's set to **Public**
 
 2. **Upload Your Files**

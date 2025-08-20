@@ -505,19 +505,7 @@ body {
   margin-bottom: 10px;
 }
 
-.tip-box {
-  background: #f0f9ff;
-  border: 1px solid #0ea5e9;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 30px 0;
-}
 
-.tip-box h4 {
-  color: #0369a1;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
 
 .warning-box {
   background: #fef3c7;

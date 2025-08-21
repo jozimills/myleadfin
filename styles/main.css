@@ -227,12 +227,24 @@ body {
 .feature-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #6ee7b7 0%, #38b2ac 100%);
+  background: #38b2ac;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 25px;
+ .tip-box {
+   background: #38b2ac;
+   border-radius: 8px;
+   padding: 20px;
+   margin: 30px 0;
+   color: #111;
+ }
+ .tip-box h4 {
+   color: #111;
+   font-weight: 600;
+   margin-bottom: 10px;
+ }
 }
 
 .feature-icon i {
@@ -293,7 +305,7 @@ body {
 /* Recent Posts Section */
 .recent-posts {
   padding: 100px 0;
-  background: white;
+  background: linear-gradient(135deg, #6ee7b7 0%, #38b2ac 100%);
 }
 
 .posts-grid {
@@ -303,7 +315,7 @@ body {
 }
 
 .post-card {
-  background: white;
+  background: #222;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -317,7 +329,7 @@ body {
 
 .post-image {
   height: 200px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #38b2ac;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -508,15 +520,15 @@ body {
 
 
 .warning-box {
-  background: #fef3c7;
-  border: 1px solid #f59e0b;
+  background: #b2f5ea;
+  border: 1px solid #38b2ac;
   border-radius: 8px;
   padding: 20px;
   margin: 30px 0;
 }
 
 .warning-box h4 {
-  color: #d97706;
+  color: #111;
   font-weight: 600;
   margin-bottom: 10px;
 }

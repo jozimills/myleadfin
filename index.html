@@ -32,24 +32,18 @@
             <img src="/myleadfin.png" alt="MYLEADfin Logo" style="height:32px;vertical-align:middle;"> <span>MYLEADfin</span>
           </div>
           <ul class="nav-menu">
-            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="index.html" class="nav-link">Home</a></li>
             <li>
               <a href="pages/investing.html" class="nav-link">Investing</a>
             </li>
             <li>
-              <a href="pages/saving-money.html" class="nav-link"
-                >Saving Money</a
-              >
+              <a href="pages/making-money.html" class="nav-link">Making Money</a>
             </li>
             <li>
-              <a href="pages/passive-income.html" class="nav-link"
-                >Passive Income</a
-              >
+              <a href="pages/saving-money.html" class="nav-link">Saving Money</a>
             </li>
             <li>
-              <a href="pages/making-money.html" class="nav-link"
-                >Making Money</a
-              >
+              <a href="pages/passive-income.html" class="nav-link">Passive Income</a>
             </li>
             <li><a href="pages/about.html" class="nav-link">About</a></li>
           </ul>
@@ -234,5 +228,15 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQGVKJ5L"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<!-- Add this before </body> for mobile menu toggle -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('open');
+    });
+  });
+</script>
   </body>
 </html>

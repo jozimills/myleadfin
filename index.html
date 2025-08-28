@@ -59,7 +59,7 @@
           transition: all 0.3s;
         }
         .nav-menu {
-          display: flex !important;
+          display: none;
           flex-direction: column;
           background: #222;
           position: absolute;
@@ -77,8 +77,10 @@
       }
 
       /* Hide hamburger on desktop */
-      .nav-toggle {
-        display: none;
+      @media (min-width: 769px) {
+        .nav-toggle {
+          display: none;
+        }
       }
 
       .header, .nav-container {
@@ -95,7 +97,7 @@
       <nav class="nav">
         <div class="nav-container">
           <div class="nav-logo">
-            <img src="myleadfin.png" alt="MYLEADfin Logo" style="height:32px;vertical-align:middle;"> 
+            <img src="../myleadfin.png" alt="MYLEADfin Logo" style="height:32px;vertical-align:middle;"> 
             <span>MYLEADfin</span>
           </div>
           <ul class="nav-menu">
@@ -113,9 +115,9 @@
           </div>
         </div>
       </nav>
-    </header>
-      <!-- Hero Section -->
-      <section class="hero">
+    </header> 
+    <!-- Hero Section -->
+     <section class="hero">
         <div class="hero-container">
           <div class="hero-content">
             <h1 class="hero-title">

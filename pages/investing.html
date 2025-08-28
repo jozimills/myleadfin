@@ -34,7 +34,7 @@
           <ul class="nav-menu">
             <li><a href="../index.html" class="nav-link">Home</a></li>
             <li>
-              <a href="investing.html" class="nav-link active">Investing</a>
+              <a href="pages/investing.html" class="nav-link active">Investing</a>
             </li>
             <li>
               <a href="passive-income.html" class="nav-link">Passive Income</a>
@@ -299,5 +299,16 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQGVKJ5L"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', function() {
+        navMenu.classList.toggle('open');
+      });
+    }
+  });
+</script>
   </body>
 </html>

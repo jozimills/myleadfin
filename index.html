@@ -47,12 +47,13 @@
           top: 10px;
           right: 16px;
           z-index: 1100;
+          background: transparent;
         }
         .nav-toggle span {
           display: block;
           height: 4px;
           width: 28px;
-          background: #38b2ac;
+          background: #38b2ac; /* Make sure this is a visible color */
           margin: 4px 0;
           border-radius: 2px;
           transition: all 0.3s;
@@ -82,6 +83,10 @@
 
       .header, .nav-container {
         position: relative;
+      }
+
+      .nav-toggle {
+        border: 1px solid rgb(0, 255, 221);
       }
     </style>
   </head>

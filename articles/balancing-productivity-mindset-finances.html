@@ -19,22 +19,27 @@
     </head>
     <body>
         <header class="header">
-            <nav class="nav">
-                <div class="nav-container">
-                    <div class="nav-logo">
-                        <img src="/myleadfin.png" alt="MYLEADfin Logo" style="height:32px;vertical-align:middle;"> <span>MYLEADfin</span>
-                    </div>
-                    <ul class="nav-menu">
-                        <li><a href="../index.html" class="nav-link">Home</a></li>
-                        <li><a href="../pages/investing.html" class="nav-link">Investing</a></li>
-                        <li><a href="../pages/passive-income.html" class="nav-link">Passive Income</a></li>
-                        <li><a href="../pages/making-money.html" class="nav-link">Making Money</a></li>
-                        <li><a href="../pages/saving-money.html" class="nav-link">Saving Money</a></li>
-                        <li><a href="../pages/about.html" class="nav-link">About</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+  <nav class="nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="/myleadfin.png" alt="MYLEADfin Logo" style="height:32px;vertical-align:middle;"> <span>MYLEADfin</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="../pages/investing.html" class="nav-link">Investing</a></li>
+        <li><a href="../pages/making-money.html" class="nav-link">Making Money</a></li>
+        <li><a href="../pages/saving-money.html" class="nav-link">Saving Money</a></li>
+        <li><a href="../pages/passive-income.html" class="nav-link">Passive Income</a></li>
+        <li><a href="../pages/about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
 
         <main class="article-page">
             <div class="container">
@@ -99,5 +104,49 @@
         </main>
         <script src="../scripts/main.js"></script>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQGVKJ5L" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    navToggle.addEventListener('click', function() {
+      navMenu.classList.toggle('open');
+    });
+  });
+</script>
     </body>
 </html>
+
+<style>
+/* Hide menu by default on mobile */
+.nav-menu {
+  display: flex; /* or block for desktop */
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px; /* adjust as needed */
+    right: 0;
+    width: 200px;
+    z-index: 1000;
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+/* Show nav-toggle only on mobile */
+.nav-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+}
+</style>

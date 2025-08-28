@@ -253,10 +253,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 /* Hide menu and show hamburger on mobile */
 @media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    z-index: 1100;
+  }
   .nav-menu {
     display: none;
     position: absolute;
-    top: 60px; /* adjust based on your header height */
+    top: 60px;
     right: 0;
     background: #222;
     flex-direction: column;
@@ -267,14 +275,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
   .nav-menu.open {
     display: flex;
-  }
-  .nav-toggle {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 18px;
-    right: 24px;
-    z-index: 1100;
   }
 }
 
